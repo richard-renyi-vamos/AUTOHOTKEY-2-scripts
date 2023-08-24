@@ -1,0 +1,4 @@
+^t::
+{
+    Send "Test text hotkey"
+}
