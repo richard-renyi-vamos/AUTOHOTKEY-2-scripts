@@ -1,0 +1,4 @@
+MyGui := Gui()
+MyGui.Add("Text",, "Please enter your name:")
+MyGui.AddEdit("vName")
+MyGui.Show
