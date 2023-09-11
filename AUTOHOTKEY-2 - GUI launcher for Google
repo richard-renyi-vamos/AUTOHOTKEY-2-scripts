@@ -1,0 +1,14 @@
+MyGui := Gui()
+FakeLink := MyGui.Add("Text", "", "Click here for Google.")
+FakeLink.SetFont("underline cBlue")
+FakeLink.OnEvent("Click", LaunchGoogle)
+
+; ALTERNATIVE link control
+MyGui.Add("Link",, 'Click <a href="www.google.com">here</a> for Google.')
+MyGui.Show()
+
+LaunchGoogle(*) {
+    Run("www.google.com")
+}
+
+; SOURCE TUTORIAL: https://www.autohotkey.com/docs/v2/lib/GuiControls.htm
